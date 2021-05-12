@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detailsLayout"
+    tools:context=".Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--First Section-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="uploadImage"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/num_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:includeFontPadding="false"
+                android:text="Sample Number"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:indeterminateTint="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:visibility="invisible"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="14dp" />
+                <TextView
+                    android:id="@+id/msg"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="msg"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Second Section-->
+        <!--Third Section-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="First Name" />
+
+            <EditText
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="13"
+                android:hint="First Name"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Last Name" />
+
+            <EditText
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="13"
+                android:hint="Last Name"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:checked="false"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Date of Birth" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="31"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    />
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="12"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_marginLeft="15dp"/>
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="2000"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Address" />
+
+
+            <EditText
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:hint="Address"/>
+
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="@color/colorWhite"
+                android:text="UPDATE"
+                android:onClick="update"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

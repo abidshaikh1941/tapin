@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FireApp2</string>
+    <string name="about_text">Tapin started off as a platform to address inefficiencies intracity courier serives and
+        transform the way goods are transported inside the cities, enabling people courier anything on-demand.</string>
+    <string name="tagline">One Solution for intra-city courier services</string>
+</resources>
